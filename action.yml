@@ -1,5 +1,8 @@
 name: 'Please Action'
 description: 'An action for using the please build tool'
+author: 'luke142367'
+color: green
+icon: triangle
 inputs:
   args:  # id of input
     description: 'Arguments to plz command'
