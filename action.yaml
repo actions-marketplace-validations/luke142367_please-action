@@ -1,0 +1,11 @@
+name: 'Please Action'
+description: 'An action for using the please build tool'
+inputs:
+  args:  # id of input
+    description: 'Arguments to plz command'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}
