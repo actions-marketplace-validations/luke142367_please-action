@@ -12,6 +12,8 @@ RUN mv please/please please/plz
 
 ENV PATH="/.please/please:${PATH}"
 
+RUN plz update
+
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT [ "/entrypoint.sh" ]
